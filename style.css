@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.icon-bar {
+  width:75px;
+  background-color: #f2e5e5;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  right:40px;
+  opacity: .7;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition:0.3s ease;
+  color: rgb(28, 9, 9);
+  font-size: 40px;
+}
+.icon-bar a:hover {
+    background-color: #fefcf4;
+  }
+.active {
+    background-color: #grey
+    ;
+  }
+  .row.content {height:1500px}
+#getstarted {
+  position:relative;
+  background-image:url(../image/temple1.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  min-height:300px;
+  width:100%;
+  height:100%
+   }
+   #getstarted2 {
+    position:relative;
+    background-image:url(../image/fixed-image2.webp);
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    min-height:300px;
+    width:100%;
+    height:100%
+     }
+.dark-overlay{
+  position:absolute;
+  background-color: rgba(0, 0, 0, .7);
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+}
+.col-6 col{
+  height: 700px;
+}
+/* ------------------------------------multi-card------------------------------------------- */
+.card{
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px rgb(87, 87, 109);
+  overflow: hidden;
+}
+.imag-card{
+  height:500px;
+  width: 350px;
+border-radius: 3px;
+}
+.intro{
+  text-align: center;
+  height:70px;
+  width: 350px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom:30px;
+  background: rgba(164, 124, 87, 0.5);
+  color: white;
+  transition:2s;
+  }
+h1{
+  margin: 10px;
+  font-size: 40px;
+}
+.intro p{
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity:.7;
+}
+.card:hover{
+  cursor: pointer;
+}
+.card:hover .intro {
+  height: 200px;
+  bottom: 0px;
+  background:rgba(72, 45, 20, 0.5);
+  opacity:.7;
+  }
+  .card:hover .p{
+    visibility: visible;
+    opacity: .7;
+  }
+  .card:hover img{
+    transform: scale(1.1) rotate(-4deg);
+    transition: 2s;
+  }
+  .btcard{
+    background-color: rgb(39, 27, 12);
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+   border: 5px;
+   padding: 5px;
+   
+  }
+  /* ---------------------------------our team-------------------------------------------------- */
+ .our-team{
+  text-align: center;
+  position: relative;
+  color: rgb(249, 247, 247);
+   }
+  .our-team img{
+    width: 100%;
+          }
+.our-team .content{
+border-radius: 25%;
+background: rgba(0, 0, 0, .6);
+position: absolute;
+height:100%;
+width:100%;
+left: 0;
+top: 0;
+text-align: center;
+padding-top: 45%;
+transform: perspective(400px) rotate(-90deg);
+transform-origin:center top 0;
+transition: all 0.5s ease 0s;
+opacity: 0
+  }
+  .our-team:hover .content,
+  .our-team.active:hover .content{
+    opacity:1;
+       transform:perspective(400px) rotateX(0deg);
+  }
+ .our-team .content .title{
+  margin: 0 0 10px;
+  display: block;
+  font-size: 25px;
+  font-weight: 600;
+  }
+  .our-team .content .post{
+    margin: 0 0 25px;
+    font-size: 15px;
+  }
+  .our-team .content .img{
+    border-radius: 50%;
+  }
+ @media screen and (max-width:990px)
+ {
+  .our-team{
+    margin-bottom: 30px;
+  }
+ }
+ /* --------------------------------------------------------------------------- */
+
+#horiz-card{
+  height:400px;
+  margin: 50px;
+  box-shadow: 10px 10px 40px rgb(129, 109, 46);
+  overflow: hidden;
+  border-radius: 25px;
+  /* overflow: hidden; */
+  position: relative;
+}
+.card-img{
+ width: 100%;
+height:100%;
+object-fit:cover;
+padding: 10px   0 20px;
+/* position: relative; */
+/* overflow: clip; */
+/* transform: rotate(-3deg); */
+}
+
+.horiz-card .card-text{
+  color: black;
+}
+@media screen and (min-width:769px){
+  .horiz-card-img{
+    max-width:400px;
+    max-height: 150%;
+  border-bottom-right-radius: 0;
+    transform: rotate(-6deg);
+    transition: .3s ease;
+   
+}
+#right-side{
+  font-size: 22px;
+  font-weight: 600;
+ }
+}
+.postcard__subtitle{
+  width: 200px;
+}
+.postcard__subtitle .line-card{
+ display: block;
+background-color:rgb(7, 7, 239);
+height: 10px;
+ margin: 10px 0;
+  width: 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+.postcard__subtitle .line-card:hover{
+  width: 100px;
+  transition:width 0.3s ease;
+}
+
+.card-body__tagbox{
+  justify-content: start;
+}
+.card-body .card-body__tagbox .tag__item{
+  display: inline-block;
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 2.5px 10px;
+    margin: 0 5px 5px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: background-color 0.5s;
+}
+.card-soc{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: rgb(239, 218, 182);
+  border-radius: 10px;
+  box-shadow: 0 35px 88px rgba(0,0,0,15);
+  margin: auto;
+  opacity: .7;
+}
+.text-light {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: black;
+}
+.text-light {
+--bs-text-opacity: 1;
+color: rgba(var(--bs-light-rgb),var(--bs-text-opacity))!important;
+}
+.text-center {
+  text-align: center!important;
+}
+.logoicon {
+  height: 80px;
+  width: 80px;
+  box-shadow: -3px -3px 15px 5px rgb(201, 198, 241);
+  border-radius: 50%;
+  transition: 1s;
+}
+/* ---------------------------------------------------------------------------- */
+.text-light{
+  background:linear-gradient(to bottom,rgb(172, 137, 78), rgb(0, 0, 0) );
+}
+
+
+
+
+ 
+      
